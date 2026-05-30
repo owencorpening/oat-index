@@ -1,0 +1,72 @@
+.rotator {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.stack {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 14px 16px;
+  background: var(--color-surface-raised);
+  border-radius: var(--radius-card);
+  border: 1px solid var(--color-border);
+  min-height: var(--tap-min);
+  position: relative;
+  transition: background 0.15s;
+}
+
+.card:active {
+  background: var(--color-surface);
+}
+
+.series {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-text-secondary);
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.3;
+  color: var(--color-text-primary);
+  padding-right: 20px;
+}
+
+.ext {
+  position: absolute;
+  top: 14px;
+  right: 16px;
+  font-size: 0.8rem;
+  color: var(--color-text-secondary);
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--color-border);
+  min-height: unset;
+  padding: 0;
+  transition: background 0.2s;
+}
+
+.dot.active {
+  background: var(--color-text-primary);
+}

@@ -1,0 +1,81 @@
+.hub {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px 16px 32px;
+  min-height: 100svh;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.wordmark {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--color-text-primary);
+}
+
+.tagline {
+  font-size: 0.75rem;
+  color: var(--color-text-secondary);
+  letter-spacing: 0.04em;
+}
+
+.featured {
+  flex-shrink: 0;
+}
+
+.zones {
+  flex: 1;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  min-height: var(--tap-min);
+  padding: 18px 12px;
+  background: var(--color-surface-raised);
+  border-radius: var(--radius-card);
+  border: 1.5px solid var(--accent, var(--color-border));
+  color: var(--color-text-primary);
+  transition: background 0.15s;
+}
+
+.tile:active {
+  background: var(--color-surface);
+}
+
+.icon {
+  font-size: 1.5rem;
+}
+
+.zoneName {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.count {
+  font-size: 0.75rem;
+  color: var(--color-text-secondary);
+}

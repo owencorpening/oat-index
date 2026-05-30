@@ -1,0 +1,24 @@
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.85rem;
+  padding: 4px 0;
+}
+
+.home {
+  color: var(--accent, var(--color-text-secondary));
+  font-weight: 600;
+  min-height: var(--tap-min);
+  display: flex;
+  align-items: center;
+}
+
+.sep {
+  color: var(--color-text-secondary);
+}
+
+.current {
+  color: var(--color-text-primary);
+  font-weight: 600;
+}
