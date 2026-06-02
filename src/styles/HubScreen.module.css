@@ -58,7 +58,42 @@
   border-radius: var(--radius-card);
   border: 1.5px solid var(--accent, var(--color-border));
   color: var(--color-text-primary);
-  transition: background 0.15s;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.12);
+  transition: background 0.15s, transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+}
+
+.tile[data-series="water"] {
+  --glow-color: rgba(29, 158, 117, 0.25);
+  --glow-shadow: 0 0 8px 0 rgba(29, 158, 117, 0.3);
+}
+
+.tile[data-series="cng"] {
+  --glow-color: rgba(186, 117, 23, 0.25);
+  --glow-shadow: 0 0 8px 0 rgba(186, 117, 23, 0.3);
+}
+
+.tile[data-series="medical"] {
+  --glow-color: rgba(24, 95, 165, 0.25);
+  --glow-shadow: 0 0 8px 0 rgba(24, 95, 165, 0.3);
+}
+
+.tile[data-series="family"] {
+  --glow-color: rgba(153, 53, 86, 0.25);
+  --glow-shadow: 0 0 8px 0 rgba(153, 53, 86, 0.3);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .tile:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--glow-shadow), 0 4px 12px 0 rgba(0, 0, 0, 0.16);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tile:hover {
+    box-shadow: var(--glow-shadow), 0 2px 6px 0 rgba(0, 0, 0, 0.12);
+  }
 }
 
 .tile:active {

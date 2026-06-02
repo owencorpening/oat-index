@@ -38,6 +38,7 @@ export default function HubScreen() {
             <button
               key={zone.id}
               className={styles.tile}
+              data-series={zone.id}
               style={{ '--accent': zone.accentColor }}
               onClick={() => navigate(`/${zone.id}`)}
               aria-label={`${zone.name} — ${zone.count} articles`}
