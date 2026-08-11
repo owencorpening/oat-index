@@ -9,6 +9,7 @@ This repository contains the OAT index / web presentation layer.
 - Treat `oat-standards` as the shared source of truth for brand, naming, and structural conventions.
 - If this repo conflicts with `oat-standards`, follow `oat-standards` and align the index implementation accordingly.
 - Use local project docs first, then consult `oat-standards` before changing shared presentation patterns.
+- Cross-repo open items (decisions, loose ends with no obvious repo home) are tracked in `oat-standards/todo.md`.
 
 ## Working rules
 
