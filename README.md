@@ -1,3 +1,5 @@
+> **Retired 2026-11-21.** The site now lives at https://owencorpening.github.io/oat-web/ and is built from oat-content.
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
