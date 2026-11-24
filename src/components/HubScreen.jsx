@@ -24,7 +24,7 @@ export default function HubScreen() {
         <Cornerstone size={64} />
         <div className={styles.wordmark}>
           <h1 className={styles.title}>Owen's Applied Thinking</h1>
-          <p className={styles.tagline}>Engineering · Evidence · Empiricism</p>
+          <p className={styles.tagline}>Where reasoning meets the real world.</p>
         </div>
       </header>
 
